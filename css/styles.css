@@ -1,0 +1,80 @@
+.astonish {
+    visibility: visible;
+}
+
+@media (min-width: 768px) {
+    .astonish {
+        visibility: hidden;
+    }
+    .animated {
+            visibility: visible;
+    }
+}
+.title-section {
+text-align: center;
+color: white;
+}
+
+.title-section h1, .title-section h2, .title-section p {
+margin: 10px 0;
+}
+
+.line {
+width: 50%; /* Ajuste o tamanho da linha */
+height: 2px; /* Espessura da linha */
+background-color: rgb(116, 200, 233); /* Cor da linha */
+margin: 10px auto; /* Centraliza a linha */
+border: none; /* Remove bordas adicionais */
+}
+.title-truck {
+color:rgb(116, 200, 233);
+}
+.wrapper {
+    position: relative; /* Para posicionar o overlay dentro do wrapper */
+    text-align: center;
+    color: white;
+}
+
+        /* General styling for the overlay box */
+.overlay-box {
+position: relative; /* Keeps the box in context of the parent */
+background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+padding: 2em; /* Adds spacing around the text (responsive unit) */
+border-radius: 10px; /* Optional: rounds the corners of the box */
+color: white; /* Ensures the text is readable over the dark background */
+font-size: 1em; /* Base font size, adjusts with viewport scaling */
+line-height: 1.5em; /* Improves text readability */
+}
+
+.img-absolute {
+position: absolute;
+width: 100%;
+height: auto;
+z-index: -1; /* Keeps the image behind the overlay box */
+}
+/* Centraliza os botões de download */
+.download-buttons {
+display: flex;
+justify-content: center;
+gap: 20px; /* Espaço entre os botões */
+margin-top: 20px;
+}
+
+/* Estilização dos links dos botões */
+.btn-store {
+display: inline-block;
+width: 120px; /* Largura dos botões */
+height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Imagens dos botões */
+.store-logo {
+width: 100%; /* Faz a imagem ocupar toda a largura do botão */
+height: auto; /* Mantém as proporções corretas da imagem */
+transition: transform 0.3s; /* Animação para hover */
+}
+
+.store-logo:hover {
+transform: scale(1.2); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
